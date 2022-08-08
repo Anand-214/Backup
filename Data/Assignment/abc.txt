@@ -1,0 +1,6 @@
+what IS AN os?
+what are the different OS?
+	when is os used?
+what is PARTITION and its use?
+how many partitions CAN be done?
+hello

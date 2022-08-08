@@ -1,0 +1,16 @@
+#!/bin/bash
+#Perimeter of the rectangle 
+#take input from user
+
+read -p "Enter the length:" length
+read -p "Enter the breadth:" breadth
+
+echo
+
+if [ $length -lt 0 -a $breadth -lt 0 ]
+then
+	echo "ERROR:Please enter only positive numbers"
+else
+Perimeter=`echo "scale=3 ; 2*($length+$breadth)" | bc`
+echo "The Perimeter is $Perimeter"
+fi

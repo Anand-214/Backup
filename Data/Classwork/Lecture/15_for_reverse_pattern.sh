@@ -1,0 +1,12 @@
+#!/bin/bash
+#Print the pattern of *
+read -p "Enter the number of rows: " n
+for row in `seq $n -1 1`
+do
+    for col in `seq $row`
+    do
+	echo -n "* "
+    done
+    echo
+done
+

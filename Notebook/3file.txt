@@ -1,0 +1,1 @@
+New lines always keep on addingsecond line appended

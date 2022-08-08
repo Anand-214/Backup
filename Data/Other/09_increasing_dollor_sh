@@ -1,0 +1,13 @@
+#!/bin/bash
+#To print the $ pattern from taking user input
+read -p "enter the number of rows: " Row
+for var in `seq $Row`
+do
+    echo -n "$var-->"
+    for count in `seq $var`
+    do 
+	echo -n "$ "
+    done
+    echo
+done
+
