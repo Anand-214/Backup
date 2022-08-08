@@ -1,0 +1,59 @@
+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
+           token
+
+
+Git has 3 states:
+1) modified :   whenever we have a file which is not tracked then its in a modified state.
+2) staged   : git add <filename>  : after this command the file is now in staged state and is getting tracked.
+3) commit   : git commit <filename> : commit means the file is now safely stored in local database.
+
+
+
+
+sudo install apt git
+git config --global user.name "Anand K"
+git config --global user.email anandkul2196@gmail.com
+git config --global user.name    ---------> to check the username
+git config --global user.email   ---------> to check the email
+git config --global --edit
+
+
+git status                          (initially no file was staged so we had nothing here)
+touch test.c                        (file created)
+git add <filename>                  (file added to stage state)
+git log                             (check how many commits are done already) 
+git add <filename>                  |_____>   both these commands add the file to staged state from modified state. 
+gir add *                           |     >    * will add all the files at once which are not staged yet.
+
+
+git remote add origin git@github.com:Anand-214/Python.git
+git branch -M main
+git push -u origin main
+
+
+git remote add origin https://github.com/Anand-214/Python.git
+
+
+
+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
+  --   new token 21/04/2022 1:09PM
+  
+  
+  
+  
+  login -> generate token -> create repo -> Add README
+git config --global user.name <OUR NAME>
+git config --global user.email <OUR email>
+git config --global --edit
+
+
+1 state is the modified state. 
+2 state is the staged state.
+
+GUI - grahpical user interface --what we use normally....going in the folder and making changes
+CLI - command line interface --
+
+
+
+
+

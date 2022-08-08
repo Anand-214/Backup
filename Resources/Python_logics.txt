@@ -1,0 +1,11 @@
+check the python version : 
+				import sys
+				print(sys.version)
+				print(sys.version_info)
+
+
+print the current date and time:
+				import datetime
+				print(datetime.datetime.now())
+				
+

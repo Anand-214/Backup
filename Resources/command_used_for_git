@@ -1,0 +1,43 @@
+sudo install apt git
+git config --global user.name "Anand K"
+git config --global user.email anandkul2196@gmail.com
+git config --global user.name    ---------> to check the username
+git config --global user.email   ---------> to check the email
+git config --global --edit
+
+
+git status                          (initially no file was staged so we had nothing here)
+touch test.c                        (file created)
+git add <filename>                  (file added to stage state)
+git log                             (check how many commits are done already) 
+git add <filename>                  |_____>   both these commands add the file to staged state from modified state. 
+gir add *                           |     >    * will add all the files at once which are not staged yet.
+
+
+git remote add origin git@github.com:Anand-214/Python.git
+git branch -M main
+git push -u origin main
+
+
+git remote add origin https://github.com/Anand-214/Python.git
+
+
+
+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 
+ --   new token 21/04/2022 1:09PM
+ 
+ xdg-open file.pdf - open a pdf through terminal
+ 
+ 
+ some other commands executed on terminal
+
+ type <file name>   :  will give the type of the command
+ file <file name>   :  will show the information for which architercute, which compiler used, little or big and all the details of the file.
+ nm <exe file name> :  will show the linkings done
+ size <file name>   :  to know the size
+ we strip the code to remove the included symbols and thus the image size will be reduced.
+ 
+ 
+ 
+ 
+ 

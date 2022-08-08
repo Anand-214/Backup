@@ -1,0 +1,439 @@
+'''1.Write a program for Left rotation of the list
+Ex: Input:l=[1,2,3,4,5,6,7]
+N=3(3 times left rotations)
+output:[4,5,6,7,1,2,3] '''
+
+l = [1,2,3,4,5,6,7]
+N = 3
+
+for index in range(N):
+    element = l.pop(0)
+    l.append(element)
+
+print(l)
+_______________________________________________________________________________________________________________________________________
+
+'''Input string: Hello world Ho!!!
+Output Char:l
+which character occured more times for the first.'''
+
+str = "PYTHO.COTS"
+dict = {}
+
+for eachChar in range(len(str)):
+    if str[eachChar] in dict:
+        dict[str[eachChar]]+= 1
+    else:
+        dict[str[eachChar]] = 1
+
+//find max with for loop
+
+
+
+# pop(-1)
+l=[1,2,3,4,5,6]
+print(l.pop(-1)) # 6
+print(l) #[1,2,3,4,5]
+
+
+#####################
+for i in range(0,5):
+    for j in range(0,5):
+        if i==j:
+            continue
+        else:
+            print(j)
+'''
+1 2 3 4
+0 2 3 4
+0 1 3 4
+0 1 2 4
+0 1 2 3
+'''
+
+'''finding the elements in an array which are greater than its 
+right most values like a[]={27,5,17,4,25,9,2,3}
+output: b[]={27,17,25,9} '''
+
+a=[27,5,17,4,25,9,2,3]
+b=[]
+for index in range(len(a)-1):
+    if(a[index] > a[index + 1]):
+        b.append(a[index])
+        
+print(b)
+
+==============
+
+Candidate - 1:
+
+1) Detailed discussion on the resume
+
+2) Any project is done in Python
+
+3) List = 12,16,5,2,3
+	Print the leader in the list 
+	Leader is the highest from the right side of the list
+	Output :- 16,5,3
+	
+4) Write the optimized code for the above
+
+5) Swapping of two numbers in Python
+   a,b = b,a
+______________________________________________________________________________________________________________________________________
+6) OOPS in Python
+
+7) Sorting Techniques? Which is the best technique? Explain the logic.
+    
+
+8) Search a loop in the single linked list.
+
+9) How can you print the binary representation of a given number? 
+
+
+
+Candidate - 2:
+
+Round - 1:
+
+1) Projects done in Python.
+
+2) Insertion sort
+----------->
+def insertion_sort(lst): 
+	for i in range(1, len(lst)):
+		temp = lst[i] 
+		j = i - 1 
+		print("i",i) 
+		print("j",j) 
+		while j >= 0 and temp < lst[j]:
+	 		lst[j + 1] = lst[j] #
+	 		j = j - 1 
+	 	lst[j + 1] = temp 
+	 		
+	 	
+	 	
+lst = [3, 2, 1, 5, 4] 
+insertion_sort(lst) 
+print("Sorted list is: ", lst) 
+
+__________________________________________________________________________________________________________________________________________
+3) Binary Search
+    def binary_search (a,low,high,x):
+          if (high >= low):
+                   mid = (low+high)//2
+                   if a[mid] == x:
+                           return mid
+                   elif a[mid] > x:
+                           return binary_search(a,low,mid-1,x)
+                   else:
+                           return binary_search(a,mid+1,high,x)
+          else:
+                  return -1
+  
+  a = [10,8,12,90,21,30]
+  a.sort()
+  print(a)
+  x = int(input("Enter the element:"))
+  res = binary_search(a,0,(len(a)-1),x)
+  if res != -1:
+          print("Found.")
+  else:
+          print("Not found.")
+_____________________________________________________________________________________________________________________________________
+4) Find a pair(s) from array whose difference is 5?
+
+	a) Array1 = 3 5 7 8 10      Sorted
+	
+	b) Array2 = 3 7 10 5 8		 Unsorted
+	
+	Give all possible ways?
+	
+------->list_1 = [8,10,7,3,5]
+  	 n = int(input("Enter the difference:"))
+  	 for i in range(len(list_1)):
+           	for j in range(len(list_1)):
+                   	if list_1[j] - list_1[i] == n:
+                       	print(f"Pair found {list_1[i]} and {list_1[j]}")
+
+______________________________________________________________________________________________________________________________________
+5) a  =  2 5 7 8 
+   b  =  3 4 9
+   
+   Insert a into b in sorted order.
+   
+   
+   
+6) Classed in Python? : Its a concept of OOPS where we declare a class and later can also define its own functions.
+ 
+7) Constructors in Python?   __init__  is a constructor in python and wherver we declare a object to a class we pass the arguments which we further define in constructor.
+-------------------------------------------------------------------------------------------------------------------------------- 
+Round - 2:
+
+1) Tell everything about string in Python. 
+
+2) Tell everything about disctionaries in Python.
+
+3) Difference b/w list and array?   
+
+4) How to declare array in Python?
+
+5) Data types in array?
+
+===============================================================================================================================
+1.Write a programme for Left rotation of the list
+Ex:
+Input:l=[1,2,3,4,5,6,7]
+N=3(3 times left rotations)
+output:[4,5,6,7,1,2,3]
+
+---->for index in range(N):
+     element = l.pop(0)
+     l.append(element)
+     print(l)
+
+2.Input_string: PYTHO.COTS
+Output Char:T 
+-->Input_string[2]  to get output T
+_________________________________________________________________________________________________________________________________
+which character occured more times for the first.
+---->
+	for eachChar in range(len(str)):
+   if str[eachChar] in dict:
+        dict[str[eachChar]]+= 1
+    else:
+        dict[str[eachChar]] = 1
+
+
+MCQ:
+1.a=-12/6
+ what is the value of a=?
+ ----->  -2.0
+
+2.l={x:x*x for x in l if x%2==0}
+what is the value of l=?
+----->    
+3.l=[1,2,3,4,5,6,7]
+pop(1)
+what is the value of l=?
+4.l=[1,2,3,4,5,6]
+pop(-1)
+what is the value of L=?
+5.for i in range(0,5):
+       for j in range(0,5):
+             if i==j:
+                 continue
+              else:
+                 print(j)
+
+6.How to declare a empty dictionary?  --------> dict1 = {}
+
+1. some logical and probability questions
+2. binary to decimal coversion 
+3. decimal to binary without using % and /  operators
+4. finding the elements in an array which are greater than its 
+   right most values like a[]={27,5,17,4,25,9,2,3}
+   output: b[]={27,17,25,9}
+
+==================
+
+
+
+Python Assessment Questions:
+
+•	To print key and value from dict what method to use?
+----------->		 .items will be used
+
+•	How to get key if value matches in Dictionary?
+------------>            Using the .keys() and .values() methods
+•	Is it possible to have two key in Dictionary?
+------------>           No Duplicate keys(key diclared later will be considered) will automatically updated
+•	What will be the output if I am creating dictionary with the same key? 
+------------->          The most recently declared dictionary will be considered. Infact in Python dynamic allocation is possible i.e we can give same name to any datatype where the recent declaration will be considered.
+•	How to iterate through List?
+   		    mostly using for loops
+•	How to delete key value pair from dictionary?
+		using  .pop()
+•	To square a number how will you write code using list comprehension?
+		my_list =[x,]
+               new_list = [x*x for x in my_list]
+		
+•	When to use list comprehension?
+		List comprehension offers shorter syntax when we want to create a new list based on the existing list 
+•	What is mutable and what is immutable?
+		mutable------>list,dictionary  immutable----->tuples,sets
+•	When to use tuple and when to use list?
+•	How to define class?
+		class Student:
+•	How to access private member?
+             class Student:
+                 def __init__(self,name):
+                     self.__private_member = name
+             
+             varma = Student()
+             to access:   varma._Student.__
+-----------------------------------------------------------------------             
+•	When to use class variable/data member?
+	If all the objects of a class need to share common variable then we use this.	
+•	Write code for showing Inheritance?
+                   isrelated(a,b)
+•	What happens if method define in both derived and base class?
+----->
+Method overriding is an ability of any object-oriented programming language that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its super-classes or parent classes. When a method in a subclass has the same name, same parameters or signature and same return type(or sub-type) as a method in its super-class, then the method in the subclass is said to override the method in the super-class.
+------------------------------------------------------------------------------------
+•	Can we call same method inside my derived class?   --------->Yes 
+		What happen If we called in that way?      ---------> refer below
+		what is print sequence?                    ---------> refer below
+		
+class A:
+    pass
+    #def fun1(self):
+    #    print('A')
+
+class B:
+    def fun1(self):
+        print('B')
+class C(A,B):
+    pass
+
+
+varma = C()
+
+varma.fun1()
+
+		
+------------------------------------------------------------		
+•Write your approach to design car class?
+
+class Car:
+    var = 0
+    def __init__(self,name,model,eng):
+        self.name = name
+        self.model = model
+        self.eng  =  eng
+        Car.var  += 1
+    def colour(self,colour):
+        self.colour = colour
+    def details(self):
+        print(f"The name of the car is{self.name},The model is{self.model},The colour is{self.colour}")
+		
+    @classmethod
+    def features(cls,speed,milage):
+	    cls.speed = speed
+	    cls.milage = milage
+	    print(f"Acessing class variable speed{cls.speed} and milage {cls.milage}")
+	    
+    @classmethod
+    def dummy(cls):
+	    print(f"Acessing class variable speed{cls.speed} and milage {cls.milage}")
+		
+		
+maruthi = Car("Maruthi suzuki","Swift","Esuzu")
+
+hundai = Car("Maruthi suzuki","Swift","Esuzu")
+benz = Car("Maruthi suzuki","Swift","Esuzu")
+volvo = Car("Maruthi suzuki","Swift","Esuzu")
+
+maruthi.colour("Red")
+
+maruthi.details()
+------------------------------------------------------------------------------------------------------------------------------------
+•Have you use thread what will be your approach to design thread ? when should we use thread? what is the meaning of join? where to use join?
+_________________________________________________________________________________________________________________________________________
+•Do you know any anonymous function?  ------------------->lambda function which is used to create one liner functions
+e.g: square = lambda x : x*x
+     minus = lambda x,y : x-y
+     multiply = lambda x,y : x*y
+_________________________________________________________________________________________________________________________________________
+•Explain map, reduce and filter.   
+   MAP      -----------> list(map(function name, list/tuple)) ----> the function will be applied on each element of the data type. we type casted it to list so a list will be returned.
+   FILTER  --------> list(filter(function name, list/tuple) ----> here filter will return a list in which only those elements which returned true will be present.
+   e.g:
+   def greater_than_5(num):
+	return num > 5:
+   list_1 = [1,2,3,4,5,6,7,8,9,10]	
+   list(filter(greater_than_5, list_1))
+   
+   REDUCE -------> if list_1 = [1,2,3,4,5,6] it will return 1*2*3*4*5*6 i.e reduce is used to perform a same operation on all the elements.
+   list(reduce(lambda x,y : x*y, list_1)) 
+__________________________________________________________________________________________________________________________________________
+•	What is higher level functions?
+------> If a function contains other function as a parameter or has a return type as a function then it is a higher order / level function
+__________________________________________________________________________________________________________________________________________
+•	How to insert element at particular index in a list?
+ ----> built in .insert function. Give the index and then the element to be inserted.
+       list_1 = [1,2,3,4] 
+       list_1.inser(2, 10)
+       print(list_1) 
+       o/p : [1,2,10,3,4]
+__________________________________________________________________________________________________________________________________________       
+•	Difference between list and tuple?
+------> list : mutable
+	tuple : immutable
+________________________________________________________________________________________________________________________________________
+•	Why Xrange function is removed in Python 3.x ? which is replacing this functionality in Python 3.x?
+------> xrange replaced by  range.
+________________________________________________________________________________________________________________________________________
+•	In tuple t=(1,2,3,4,[4,5,6]) ? Can i change value of Inner list in tuple ? if yes how ?
+ ------->  tup = (1,2,3,4,[4,5,6])
+	   l1 = list(tup)
+ 	   l1[4] = [10,11,12]
+ 	   l2 = tuple(l1)
+           print(l2)
+    i.e. we can change it to list and then we can modify the list 
+_________________________________________________________________________________________________________________________________________
+•	Suppose I had tuple
+                >>> t=(1,2,3)
+                >>> t=(4,5,6)
+                >>> print t
+What will be my output? What will happen inside heap?
+Memory manager will store t as 1,2,3 and later in heap it will be updated as 4,5,6
+Inside heap becaus of auto garbage collection the 1,2,3 which was initially declared will be discarded and the new assigned value 4,5,6 will be stored in heap
+__________________________________________________________________________________________________________________________________________
+•	How to get key,value and keyValue pair in Dictionary?
+--------> keyValue pair  use .items()     print(x,y)
+          key -> print(x)..........value -> print(y)
+__________________________________________________________________________________________________________________________________________
+•	How do you declare empty class?
+----------> class Student:
+	    		pass
+__________________________________________________________________________________________________________________________________________
+•	How to use parent class variables in Child class ? how do you implement it?
+           e.g: class Student:
+           		def __init__(self, name, id):
+           			self.name = name
+           			self.id = id
+           		def change_id (self, new_id):
+           			self.id = new_id
+           			
+
+•	What is pass by value and pass by reference?  --> pass by value when we actually pass the value and no the address whereas pass by reference we pass the address. PBV we can return only one value....PBR we can return multiple values.
+_________________________________________________________________________________________________________________________________________
+•	In multiple inheritance parent are class A(),class B(),class C() and Child class D(A,B,C) has same method eat().How to call specific method in Different parent classes using 'super'
+_________________________________________________________________________________________________________________________________________
+•	What is lamda function? How do you pass value to that function 20.what are generators ?
+---------->  lambda is a function which is written in single line and also def keyword is abscent.
+	      e.g:   square = lambda x : x*x
+	      square(10)
+	      
+•	What is metaclass? How you declare? Where do you use it?
+•	Write list comprehension to get the output below
+                Input=[1,2,3,4,5,6]
+                Output=[1,4,27,16,125,36]
+•	Write a decorator which can be used to update input name string of functions as below:
+                Name= "John"
+                Updated name = "Mr. John"
+
+
+True or False questions =>
+
+1. Key elements in dictionary can be of any type (like list, tuple, string, dictionary, numeric): FALSE  - Key elements can be int, string, float,boolean (because they are immutable) (but it can't be list or dictionary)
+2. Mutable objects can be modified. : True
+3. Map function returns a List. : TRUE (if we type cast it like list(map(int,list1)) it will return a list.
+4. will lambda function return a function object  : TRUE
+5. In python Overriding is not possible. :FALSE
+6. Class variable can be modified by instance of the class.  : FALSE
+7. __init__() function is a constructor. :TRUE
+8. "self" is an instance of the current working object.  : TRUE
+9. private variable in a class starts with '_'(single underscore) : FALSE ( _ is for protected and __ for private.) 
+10. "shallow copy" copies the references of objects : FALSE ( a new memory location will be created and the changes in one list wont reflect in the next related)   refer the id function
